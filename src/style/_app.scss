@@ -1,0 +1,112 @@
+.main{
+  display: flex;
+  .team-list, .team-item{
+    height: calc(100vh - 97px);
+    padding-top: 30px;
+  }
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.team-list{
+  width: 300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid var(--color-grey);
+  h2{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  ul{
+    margin-top: 20px;
+    li{
+      padding: 8px 12px;
+      border-radius: 3px;
+      line-height: 1.5;
+      cursor: pointer;
+      font-weight: 300;
+      &+li{
+        margin-top: 5px;
+      }
+      &.isActive{
+        color: var(--color-blue);
+      }
+      &:hover{
+        background-color: var(--color-grey--light);
+      }
+    }
+  }
+
+}
+.team-item{
+  flex-grow: 1;
+  padding-left: 30px;
+  padding-right: 15px;
+
+}
+
+
+.card{
+  margin-top: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  height: calc(100vh - 165px);
+  margin-left: -10px;
+  overflow-x: auto;
+
+  li{
+    background-color: var(--color-grey--light);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 10px;
+    width: 300px;
+    &+li{
+    }
+    .card__ele{
+      &+.card__ele{
+        margin-top: 15px;
+      }
+    }
+    .label{
+      font-size: 12px;
+      padding-bottom: 8px;
+    }
+    .btn{
+      padding: 5px 10px;
+      height: 35px;
+    }
+
+    &.card__user{
+      .input, .textarea{
+        background: #fff;
+        padding: 10px;
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 14px;
+      }
+      .textarea{
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+    &.card__add-user{
+      background-color: var(--color-grey);
+      .input, .textarea{
+        resize: none;
+        font-size: 14px;
+      }
+      .input{
+        height: 40px;
+      }
+      .textarea{
+        height: 80px;
+      }
+    }
+  }
+}
+
+
+
