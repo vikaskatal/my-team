@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## App Installation Steps
+ 
+
+#### Clone the repository
+    git clone git@github.com:vikaskatal/my-team.git
+    cd my-team
+    yarn install
+    yarn start
+    
+   
 ## Available Scripts
 
 In the project directory, you can run:
